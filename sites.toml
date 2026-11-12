@@ -1,0 +1,22 @@
+interval = 60            # seconds between checks
+failure_threshold = 2    # failed checks in a row before an alert email
+model = "gemini-3.5-flash-lite"
+
+# Resend: "from" must use a domain you've verified in Resend.
+# For testing, use "onboarding@resend.dev" (it can only send to your own Resend account email).
+email_from = "Uptime Monitor <onboarding@resend.dev>"
+email_to = "habibjmk@gmail.com"
+
+[[sites]]
+name = "GitHub"
+url = "https://github.com"
+
+[[sites]]
+name = "PyPI"
+url = "https://pypi.org"
+
+[[sites]]
+name = "SP website"
+url = "https://santim.io"
+timeout = 5              # optional, seconds (default 10)
+# expected_status = 200  # optional (default 200)
